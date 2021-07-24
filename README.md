@@ -33,7 +33,7 @@ Here I have created an ASG oriented ansible-playbook with dynamic inventory and 
 
 - Architacture
 
-![alt text](https://i.ibb.co/6F2Yd1v/Screenshot-2021-07-24-at-6-32-20-PM.png)
+![alt text](https://i.ibb.co/pLzjbQL/asgupdated.png)
 
 ### ASG Rolling update (_Primary Code_)
 ```sh
