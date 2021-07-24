@@ -1,8 +1,8 @@
 ## Description
 
-ASG rolling update is annoying some times to change instance count each time, when devloper deploys code from git or any other repo!!
+ASG rolling update can be annoying at times, when we have to change instance count each time the devloper deploys code from git or any other repo!!
 
-Here I have created an ASG oriented ansible-playbook with dynamic inventory and it helps us to update git contents which if the currently available instances and you can use this manually or automate via Jenkins and who use the playbook it never needs to create instances unwanted.
+Here I have created an ASG oriented ansible-playbook with dynamic inventory and it helps us to update git contents with the currently available instances and you can use this manually or automate via Jenkins and use the playbook, it never needs to create unwanted instances .
 
 ## Features
 - ASG Rolling updates through ansible-playbook (Primary)
