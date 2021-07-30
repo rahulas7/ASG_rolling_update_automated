@@ -136,7 +136,7 @@ Here I have created an ASG oriented ansible-playbook with dynamic inventory and 
 ### Used Variables:
 - app.vars
 ```sh
-git_url: "https://github.com/rahulas7/aws-elb-site.git" <------------ git url name
+git_url: "https://past_your_git_repo_url.git" <------------ gitrepo url 
 clone_dir: "/XXX/XXX/"  <------------ put you clone directoy
 health_page: health.html <----------- health page
 health_time: 25 <------------ health time
