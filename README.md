@@ -188,9 +188,8 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ######  Build Type >> Select Ansible Play book type  >> Add Ansible Playbook path
 ![alt text](https://i.ibb.co/7W18PQX/5th.png)
-
-###### Build Trigger >> Select Github hook trigger for Gitscm polling
 ![alt text](https://i.ibb.co/nbBg1pm/6th.png)
+###### Build Trigger >> Select Github hook trigger for Gitscm polling
 ![alt text](https://i.ibb.co/F4Knpgy/7th.png)
 
 # To Automate using webhook trigger from git
