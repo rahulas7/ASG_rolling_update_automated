@@ -1,8 +1,8 @@
 ## Description
 
-ASG rolling update can be annoying at times, when we have to change instance count each time the devloper deploys code from git or any other repo!!
+ASG rolling update can be annoying at times, when we have to change the instance count each time the developer deploys code from git or any other repo!!
 
-Here I have created an ASG oriented ansible-playbook with dynamic inventory and it helps us to update git contents with the currently available instances and you can use this manually or automate via Jenkins and use the playbook, it never needs to create unwanted instances .
+Here I have created an ASG oriented ansible-playbook with dynamic inventory and it helps us to update git contents with the currently available instances and you can use this manually or automate via Jenkins and use the playbook, it never needs to create unwanted instances.
 
 ## Features
 - ASG Rolling updates through ansible-playbook (Primary)
@@ -13,7 +13,7 @@ Here I have created an ASG oriented ansible-playbook with dynamic inventory and 
 - Create an IAM user role under your AWS account and please enter the values once the playbook running time
 - knoweldge in aws infrastructure
 - Create a dedicated directory for you ansible project.
-- Install Ansible,Jenkins and Git on your Master Machine (localhost)
+- Install Ansible,Jenkins and Git on your Master Machine
 - Install pip, boto, boto3 and botocore
 
 ### Ansible modules used
@@ -148,7 +148,7 @@ health_time: 25 <------------ health time
 access_key: "<your-access-key>"     <------------------ Enter your IAM Access Key
 secret_key: "<your-secret-key>"     <------------------ Enter your IAM Secret Key
 region: "us-east-1"
-key: "XXXXXX"     <----------------- you have to mention your key pairname(The keypir must be in that ansible master server) 
+key: "XXXXXX"     <----------------- you have to mention your key pairname(The keypir must be in the project directory) 
 user: "XXXXXX"  <----------------- user
 asg: "XXXXXXX"   <------------------ you can put your ASG name
 ```
