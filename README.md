@@ -79,7 +79,7 @@ Here I have created an ASG oriented ansible-playbook with dynamic inventory and 
 - name: "Deloying website from Github"
   hosts: instances  <------------ host works with dynmic inventory (hosts)
   become: true
-  serial: 1
+  serial: 1        <------------ to allow us to run the whole play one host at a time
   vars_files:
     - app.vars
   tasks:
@@ -152,7 +152,7 @@ key: "XXXXXX"     <----------------- you have to mention your key pairname(The k
 user: "XXXXXX"  <----------------- user
 asg: "XXXXXXX"   <------------------ you can put your ASG name
 ```
-# CI/CD Server Setup (JENKINS setup)
+### CI/CD Server Setup (JENKINS setup)
 ~~
 yum install java-1.8.0-openjdk-devel -y
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -177,17 +177,28 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 # Steps to configure Jenkins
 
 ###### Manage jenkins >> MAnage Plugins >> (search for ansible plugin) >> Install Ansible plugin in jenkins >> Tick restart jenkins when installation complete
+![alt text](https://i.ibb.co/CMk3QJW/1st.png)
+
 ###### Manage Jenkins >> Global Tool Configuration >> goto ansible section >> Add ansible (Add name and ansible instalaltion path in server) 
+![alt text](https://i.ibb.co/GdMNDT9/2nd.png)
+
 ###### Create a free style project
-###### Select the project time (Select Git project)  >> Add Git code URl
+![alt text](https://i.ibb.co/xzz3PxC/3rd.png)
+
+###### Select the Source code management  >> Add Git code URl
+![alt text](https://i.ibb.co/7gcBfvf/4th.png)
+
 ######  Build Type >> Select Ansible Play book type  >> Add Ansible Playbook path
+![alt text](https://i.ibb.co/7W18PQX/5th.png)
+
 ###### Build Trigger >> Select Github hook trigger for Gitscm polling
-###### Once done go to your project and click build now.
+![alt text](https://i.ibb.co/nbBg1pm/6th.png)
 
 # To Automate using webhook trigger from git
 
 ###### Go to Github and add the webhook payload URL 
 (http://< jenkins-server-IP >:8080/github-webhook/)
+![alt text](https://i.ibb.co/qWMdVHp/git.png)
   
 ###### Update webhook
 
