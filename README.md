@@ -160,19 +160,19 @@ systemctl start jenkins
 systemctl enable jenkins
 ~~~
 
-# Inital Setup
+## Inital Setup
 http://< serverIP >:8080
     
-# Find the temoprary password from this location  :::   
+## Find the temoprary password from this location  :::   
 cat /var/lib/jenkins/secrets/initialAdminPassword
 
-# Install Ansible On The CI/CD Server
+### Install Ansible On The CI/CD Server
 
 ###### amazon-linux-extras install ansible2 -y
 ###### yum install git -y
   
 
-# Steps to configure Jenkins
+### Steps to configure Jenkins
 
 ###### Manage jenkins >> MAnage Plugins >> (search for ansible plugin) >> Install Ansible plugin in jenkins >> Tick restart jenkins when installation complete
 ![alt text](https://i.ibb.co/CMk3QJW/1st.png)
