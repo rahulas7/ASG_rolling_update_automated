@@ -146,7 +146,7 @@ health_time: 25 <------------ health time
 access_key: "<your-access-key>"     <------------------ Enter your IAM Access Key
 secret_key: "<your-secret-key>"     <------------------ Enter your IAM Secret Key
 region: "us-east-1"
-key: "XXXXXX"     <----------------- you have to mention your key pairname(The keypir must be in the project directory) 
+key: "XXXXXX"     <-----------------  Mention your key pairname(The keypir must be in the project directory) 
 user: "XXXXXX"  <----------------- user
 asg: "XXXXXXX"   <------------------ you can put your ASG name
 ```
