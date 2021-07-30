@@ -1,7 +1,5 @@
 ## Description
 
-ASG rolling update can be annoying at times, when we have to change the instance count each time the developer deploys code from git or any other repo!!
-
 Here I have created an ASG oriented ansible-playbook with dynamic inventory and it helps us to update git contents with the currently available instances and you can use this manually or automate via Jenkins and use the playbook, it never needs to create unwanted instances.
 
 ## Features
