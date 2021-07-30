@@ -192,7 +192,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 ###### Build Trigger >> Select Github hook trigger for Gitscm polling
 ![alt text](https://i.ibb.co/F4Knpgy/7th.png)
 
-# To Automate using webhook trigger from git
+### To Automate using webhook trigger from git
 
 ###### Go to Github and add the webhook payload URL 
 (http://< jenkins-server-IP >:8080/github-webhook/)
